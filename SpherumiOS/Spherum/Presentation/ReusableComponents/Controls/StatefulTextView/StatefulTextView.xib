@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Medium.ttf">
+            <string>Gilroy-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatefulTextView" customModule="Spherum_Dev" customModuleProvider="target">
+            <connections>
+                <outlet property="borderView" destination="F2l-4i-IAD" id="jdT-mI-sSU"/>
+                <outlet property="contentView" destination="fhd-I9-uxx" id="TsZ-my-AqN"/>
+                <outlet property="embeddedTextView" destination="8ej-wJ-coZ" id="BRb-ha-e2b"/>
+                <outlet property="placeholderLabel" destination="vFu-pG-4Po" id="mDs-r7-qDr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="612" height="418"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2l-4i-IAD">
+                    <rect key="frame" x="0.0" y="0.0" width="612" height="418"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhd-I9-uxx">
+                            <rect key="frame" x="1" y="1" width="610" height="416"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell us about yourself..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFu-pG-4Po">
+                                    <rect key="frame" x="15" y="15" width="580" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" name="Black50Color"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8ej-wJ-coZ">
+                                    <rect key="frame" x="10" y="10" width="590" height="396"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                    <color key="textColor" systemColor="labelColor"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="vFu-pG-4Po" firstAttribute="top" secondItem="fhd-I9-uxx" secondAttribute="top" constant="15" id="Vhx-eZ-erf"/>
+                                <constraint firstAttribute="trailing" secondItem="8ej-wJ-coZ" secondAttribute="trailing" constant="10" id="a6a-o7-kNV"/>
+                                <constraint firstAttribute="bottom" secondItem="8ej-wJ-coZ" secondAttribute="bottom" constant="10" id="cCU-FT-utY"/>
+                                <constraint firstItem="8ej-wJ-coZ" firstAttribute="top" secondItem="fhd-I9-uxx" secondAttribute="top" constant="10" id="eMO-NO-qS7"/>
+                                <constraint firstItem="8ej-wJ-coZ" firstAttribute="leading" secondItem="fhd-I9-uxx" secondAttribute="leading" constant="10" id="h1H-VX-O9K"/>
+                                <constraint firstAttribute="trailing" secondItem="vFu-pG-4Po" secondAttribute="trailing" constant="15" id="xF6-Ji-fvf"/>
+                                <constraint firstItem="vFu-pG-4Po" firstAttribute="leading" secondItem="fhd-I9-uxx" secondAttribute="leading" constant="15" id="y7m-nw-pjF"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="fhd-I9-uxx" firstAttribute="leading" secondItem="F2l-4i-IAD" secondAttribute="leading" constant="1" id="APb-f0-Q1V"/>
+                        <constraint firstItem="fhd-I9-uxx" firstAttribute="top" secondItem="F2l-4i-IAD" secondAttribute="top" constant="1" id="Dzb-Rh-L50"/>
+                        <constraint firstAttribute="trailing" secondItem="fhd-I9-uxx" secondAttribute="trailing" constant="1" id="UXW-kJ-arZ"/>
+                        <constraint firstAttribute="bottom" secondItem="fhd-I9-uxx" secondAttribute="bottom" constant="1" id="zwd-3U-euy"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="F2l-4i-IAD" secondAttribute="bottom" id="K3P-VJ-hPN"/>
+                <constraint firstAttribute="trailing" secondItem="F2l-4i-IAD" secondAttribute="trailing" id="S6N-CZ-p7L"/>
+                <constraint firstItem="F2l-4i-IAD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aq5-Sa-cXj"/>
+                <constraint firstItem="F2l-4i-IAD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tPK-gP-Zij"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="123.18840579710145" y="227.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Black50Color">
+            <color red="0.51800000667572021" green="0.56099998950958252" blue="0.62699997425079346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,10 @@
+
+kernel vec4 depthFilter(__sample imageColor, __sample normalizedDisparity, float power) {
+
+    float scaleFactor = pow(normalizedDisparity.r, power);
+    
+    vec4 result = vec4(imageColor.rgb * scaleFactor, imageColor.a);
+    
+    return result;
+
+}

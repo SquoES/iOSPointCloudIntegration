@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Medium.ttf">
+            <string>Gilroy-Medium</string>
+        </array>
+        <array key="Gilroy-Semibold.ttf">
+            <string>Gilroy-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="549" id="KGk-i7-Jjw" customClass="HomeItemTableViewCell" customModule="Spherum_Dev" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="653" height="549"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="653" height="549"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="xkR-1c-fvP">
+                        <rect key="frame" x="16" y="12" width="621" height="36"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LHz-DW-qrK">
+                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                <color key="backgroundColor" name="Black50Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="Xcn-J5-caT"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tdK-EE-iIB">
+                                <rect key="frame" x="48" y="0.0" width="466" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Alakaev" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNK-Ee-dch">
+                                        <rect key="frame" x="0.0" y="0.0" width="466" height="23"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="15"/>
+                                        <color key="textColor" name="Black100Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 days ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwT-f1-m7N">
+                                        <rect key="frame" x="0.0" y="23" width="466" height="13"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="13"/>
+                                        <color key="textColor" name="Black50Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoc-uQ-Mmy" customClass="Button" customModule="Spherum_Dev" customModuleProvider="target">
+                                <rect key="frame" x="526" y="0.0" width="95" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="bGO-fF-zqa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gilroy-Semibold" family="Gilroy" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="3" minY="-4" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Un follow"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="enableColor">
+                                        <color key="value" name="Black5Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="enableTextColor">
+                                        <color key="value" name="Black50Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                        <color key="value" name="Black100Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="check_icon"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="qx6-bI-sGF"/>
+                        </constraints>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fkb-Oe-SPG">
+                        <rect key="frame" x="0.0" y="60" width="653" height="250"/>
+                        <color key="backgroundColor" name="Black10Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="250" id="rIX-On-v71"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhD-5h-bPk" customClass="Button" customModule="Spherum_Dev" customModuleProvider="target">
+                        <rect key="frame" x="8" y="68" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="MVD-ty-RDh"/>
+                            <constraint firstAttribute="width" constant="80" id="rzz-Wi-GU8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Gilroy-Semibold" family="Gilroy" pointSize="13"/>
+                        <state key="normal" title="Look in 3D">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="enableColor">
+                                <color key="value" name="OverlayColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="T3C-JH-JhF">
+                        <rect key="frame" x="16" y="322" width="621" height="215"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ubv-p7-UhX">
+                                <rect key="frame" x="0.0" y="0.0" width="621" height="28"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="pom-bn-J9c">
+                                        <rect key="frame" x="0.0" y="0.0" width="212" height="28"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdx-QQ-EA1" customClass="Button" customModule="Spherum_Dev" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="VzQ-dH-x0q"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Gilroy-Semibold" family="Gilroy" pointSize="13"/>
+                                                <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="0" image="like_icon">
+                                                    <color key="titleColor" name="Black100Color"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="like_fill_icon"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72s-Bz-hqU" customClass="Button" customModule="Spherum_Dev" customModuleProvider="target">
+                                                <rect key="frame" x="76" y="0.0" width="60" height="28"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Semibold" family="Gilroy" pointSize="13"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="0" image="views_icon">
+                                                    <color key="titleColor" name="Black100Color"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="disableColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daF-yJ-EeH" customClass="Button" customModule="Spherum_Dev" customModuleProvider="target">
+                                                <rect key="frame" x="152" y="0.0" width="60" height="28"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Semibold" family="Gilroy" pointSize="13"/>
+                                                <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="0" image="repost_icon">
+                                                    <color key="titleColor" name="Black100Color"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="KJf-hh-CZg"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="pom-bn-J9c" secondAttribute="bottom" id="L1q-g0-I3c"/>
+                                    <constraint firstItem="pom-bn-J9c" firstAttribute="leading" secondItem="Ubv-p7-UhX" secondAttribute="leading" id="U9M-ks-dAe"/>
+                                    <constraint firstItem="pom-bn-J9c" firstAttribute="top" secondItem="Ubv-p7-UhX" secondAttribute="top" id="mqX-k0-M1u"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pom-bn-J9c" secondAttribute="trailing" id="ssE-fs-gXB"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Ivanovs: I like to give people the opportunity to enjoy every day 😘 bla bla bla" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEN-Xy-XVq">
+                                <rect key="frame" x="0.0" y="40" width="621" height="148"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View 20 comments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59Z-Ky-xbg">
+                                <rect key="frame" x="0.0" y="200" width="621" height="15"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="15"/>
+                                <color key="textColor" name="Black50Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="xkR-1c-fvP" secondAttribute="trailing" constant="16" id="07K-Eo-UhR"/>
+                    <constraint firstAttribute="trailing" secondItem="T3C-JH-JhF" secondAttribute="trailing" constant="16" id="1Cp-Tu-eAI"/>
+                    <constraint firstItem="xkR-1c-fvP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="9wg-zB-eYD"/>
+                    <constraint firstItem="xkR-1c-fvP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Iks-mF-aPV"/>
+                    <constraint firstItem="fkb-Oe-SPG" firstAttribute="top" secondItem="xkR-1c-fvP" secondAttribute="bottom" constant="12" id="aqj-oB-M5D"/>
+                    <constraint firstItem="fkb-Oe-SPG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bW2-7m-8m8"/>
+                    <constraint firstItem="fhD-5h-bPk" firstAttribute="top" secondItem="fkb-Oe-SPG" secondAttribute="top" constant="8" id="bfV-ST-rX2"/>
+                    <constraint firstAttribute="trailing" secondItem="fkb-Oe-SPG" secondAttribute="trailing" id="gJc-18-nAk"/>
+                    <constraint firstAttribute="bottom" secondItem="T3C-JH-JhF" secondAttribute="bottom" constant="12" id="hPG-7d-wd0"/>
+                    <constraint firstItem="T3C-JH-JhF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="khB-5m-Ax4"/>
+                    <constraint firstItem="T3C-JH-JhF" firstAttribute="top" secondItem="fkb-Oe-SPG" secondAttribute="bottom" constant="12" id="t58-n1-BcH"/>
+                    <constraint firstItem="fhD-5h-bPk" firstAttribute="leading" secondItem="fkb-Oe-SPG" secondAttribute="leading" constant="8" id="uxh-oE-iyJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="avatarImageView" destination="LHz-DW-qrK" id="hRW-qb-EZF"/>
+                <outlet property="commentCountLabel" destination="59Z-Ky-xbg" id="luy-a9-Ibz"/>
+                <outlet property="dateLabel" destination="wwT-f1-m7N" id="vhL-Mj-bhf"/>
+                <outlet property="detailsLabel" destination="pEN-Xy-XVq" id="66j-2D-FNY"/>
+                <outlet property="followButton" destination="xoc-uQ-Mmy" id="Oyu-8y-kcn"/>
+                <outlet property="likeButton" destination="Hdx-QQ-EA1" id="NnH-rk-ewQ"/>
+                <outlet property="loginLabel" destination="VNK-Ee-dch" id="mIL-yi-UT5"/>
+                <outlet property="lookIn3DButton" destination="fhD-5h-bPk" id="jHa-cj-V0S"/>
+                <outlet property="previewImageView" destination="fkb-Oe-SPG" id="L1Y-5E-7xV"/>
+                <outlet property="reposetButton" destination="daF-yJ-EeH" id="w0R-RG-h45"/>
+                <outlet property="viewsButton" destination="72s-Bz-hqU" id="iQV-kt-GCH"/>
+            </connections>
+            <point key="canvasLocation" x="378.98550724637687" y="321.76339285714283"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="72s-Bz-hqU">
+            <size key="intrinsicContentSize" width="37" height="28"/>
+        </designable>
+        <designable name="Hdx-QQ-EA1">
+            <size key="intrinsicContentSize" width="37" height="28"/>
+        </designable>
+        <designable name="daF-yJ-EeH">
+            <size key="intrinsicContentSize" width="37" height="28"/>
+        </designable>
+        <designable name="fhD-5h-bPk">
+            <size key="intrinsicContentSize" width="62" height="25"/>
+        </designable>
+        <designable name="xoc-uQ-Mmy">
+            <size key="intrinsicContentSize" width="79" height="16"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="check_icon" width="16" height="16"/>
+        <image name="like_fill_icon" width="26" height="23"/>
+        <image name="like_icon" width="28" height="28"/>
+        <image name="repost_icon" width="28" height="28"/>
+        <image name="views_icon" width="28" height="28"/>
+        <namedColor name="Black100Color">
+            <color red="0.035000000149011612" green="0.11800000071525574" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Black10Color">
+            <color red="0.90200001001358032" green="0.9100000262260437" blue="0.92500001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Black50Color">
+            <color red="0.51800000667572021" green="0.56099998950958252" blue="0.62699997425079346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Black5Color">
+            <color red="0.95300000905990601" green="0.9570000171661377" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OverlayColor">
+            <color red="0.035294117647058823" green="0.11764705882352941" blue="0.25882352941176473" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

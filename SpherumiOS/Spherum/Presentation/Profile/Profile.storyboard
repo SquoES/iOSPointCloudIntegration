@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit profile-->
+        <scene sceneID="zYW-y4-X8G">
+            <objects>
+                <viewController storyboardIdentifier="EditProfileViewController" hidesBottomBarWhenPushed="YES" id="7lB-1P-wPD" customClass="EditProfileViewController" customModule="Spherum_Dev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zuh-Mb-4QN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y3f-fr-5Ug">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RqZ-mU-PEw">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7F2-2l-Qon">
+                                                <rect key="frame" x="164" y="6" width="86" height="86"/>
+                                                <color key="backgroundColor" name="UnselectedLightGrayColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="86" id="38f-ky-mwr"/>
+                                                    <constraint firstAttribute="width" constant="86" id="cOT-31-TmO"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mP-sX-MjA" customClass="Button" customModule="Spherum_Dev" customModuleProvider="target">
+                                                <rect key="frame" x="162" y="108" width="90.5" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Edit photo"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="enableTextColor">
+                                                        <color key="value" name="Primary500Color"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="enableColor">
+                                                        <color key="value" name="Primary10Color"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vbV-LE-Jxq">
+                                                <rect key="frame" x="16" y="165" width="382" height="266"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KGm-4Z-0Uu" customClass="StatefulTextField" customModule="Spherum_Dev" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="52"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="52" id="CkL-OL-iNl"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="Black100Color"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" name="Black30Color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vge-0X-BB7" customClass="StatefulTextField" customModule="Spherum_Dev" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="68" width="382" height="52"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="52" id="pUw-Gd-Vgx"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="Black100Color"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" name="Black30Color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HeB-ue-ytH" customClass="TextView" customModule="Spherum_Dev" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="136" width="382" height="130"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="130" id="Qdn-bt-Dnb"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="Black100Color"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Tell us about yourself..."/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="6mP-sX-MjA" firstAttribute="centerX" secondItem="RqZ-mU-PEw" secondAttribute="centerX" id="2hI-NB-m4M"/>
+                                            <constraint firstItem="vbV-LE-Jxq" firstAttribute="top" secondItem="6mP-sX-MjA" secondAttribute="bottom" constant="26" id="6gI-17-yeO"/>
+                                            <constraint firstItem="7F2-2l-Qon" firstAttribute="top" secondItem="RqZ-mU-PEw" secondAttribute="top" constant="6" id="Vzs-1t-hQ7"/>
+                                            <constraint firstItem="7F2-2l-Qon" firstAttribute="centerX" secondItem="RqZ-mU-PEw" secondAttribute="centerX" id="YrA-ek-kLG"/>
+                                            <constraint firstItem="6mP-sX-MjA" firstAttribute="top" secondItem="7F2-2l-Qon" secondAttribute="bottom" constant="16" id="bJW-Pz-Vag"/>
+                                            <constraint firstItem="vbV-LE-Jxq" firstAttribute="leading" secondItem="RqZ-mU-PEw" secondAttribute="leading" constant="16" id="bhd-0I-eT1"/>
+                                            <constraint firstAttribute="trailing" secondItem="vbV-LE-Jxq" secondAttribute="trailing" constant="16" id="oqp-W4-Dx4"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vbV-LE-Jxq" secondAttribute="bottom" constant="20" id="tI6-RC-6dV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RqZ-mU-PEw" firstAttribute="top" secondItem="y3f-fr-5Ug" secondAttribute="top" id="GlT-gj-TIi"/>
+                                    <constraint firstAttribute="bottom" secondItem="RqZ-mU-PEw" secondAttribute="bottom" id="Q2a-Tp-QPY"/>
+                                    <constraint firstItem="RqZ-mU-PEw" firstAttribute="leading" secondItem="y3f-fr-5Ug" secondAttribute="leading" id="TaX-Y7-H0M"/>
+                                    <constraint firstAttribute="trailing" secondItem="RqZ-mU-PEw" secondAttribute="trailing" id="uLJ-zq-6Sa"/>
+                                </constraints>
+                            </scrollView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDU-wi-5mv" customClass="GradientAccentButton" customModule="Spherum_Dev" customModuleProvider="target">
+                                <rect key="frame" x="16" y="810" width="382" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="nnX-Az-cDk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OOf-N2-j7z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OOf-N2-j7z" firstAttribute="bottom" secondItem="y3f-fr-5Ug" secondAttribute="bottom" id="HL6-Gx-JBn"/>
+                            <constraint firstItem="RqZ-mU-PEw" firstAttribute="width" secondItem="OOf-N2-j7z" secondAttribute="width" id="Rz5-vz-SAq"/>
+                            <constraint firstItem="eDU-wi-5mv" firstAttribute="leading" secondItem="y3f-fr-5Ug" secondAttribute="leading" constant="16" id="atC-j7-ZKx"/>
+                            <constraint firstItem="eDU-wi-5mv" firstAttribute="trailing" secondItem="y3f-fr-5Ug" secondAttribute="trailing" constant="-16" id="bJr-MN-H5r"/>
+                            <constraint firstItem="y3f-fr-5Ug" firstAttribute="leading" secondItem="OOf-N2-j7z" secondAttribute="leading" id="jYz-X4-v5s"/>
+                            <constraint firstItem="eDU-wi-5mv" firstAttribute="bottom" secondItem="y3f-fr-5Ug" secondAttribute="bottom" id="lFp-mu-ceZ"/>
+                            <constraint firstItem="RqZ-mU-PEw" firstAttribute="height" secondItem="OOf-N2-j7z" secondAttribute="height" priority="750" id="t3l-zA-qru"/>
+                            <constraint firstItem="OOf-N2-j7z" firstAttribute="trailing" secondItem="y3f-fr-5Ug" secondAttribute="trailing" id="ub6-4X-bZS"/>
+                            <constraint firstItem="y3f-fr-5Ug" firstAttribute="top" secondItem="OOf-N2-j7z" secondAttribute="top" id="unH-bp-fer"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit profile" largeTitleDisplayMode="never" id="7Cy-OP-1Na">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="mjm-Ae-o5b">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0cW-ts-zQf">
+                                <rect key="frame" x="302" y="5" width="92" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="LightBlueColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save" titleAlignment="trailing">
+                                    <color key="baseForegroundColor" name="Primary500Color"/>
+                                </buttonConfiguration>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="aboutTextView" destination="HeB-ue-ytH" id="Cct-oZ-AiQ"/>
+                        <outlet property="avatarImageView" destination="7F2-2l-Qon" id="ls0-0V-bTm"/>
+                        <outlet property="editPhotoButton" destination="6mP-sX-MjA" id="err-P7-Gdq"/>
+                        <outlet property="fullNameTextField" destination="vge-0X-BB7" id="l4p-7p-bNV"/>
+                        <outlet property="mainBottomconstraint" destination="HL6-Gx-JBn" id="JZ7-Gz-DYD"/>
+                        <outlet property="saveButton" destination="eDU-wi-5mv" id="pN2-uS-INK"/>
+                        <outlet property="saveTabBarButton" destination="0cW-ts-zQf" id="RhT-SS-jhO"/>
+                        <outlet property="userNameTextField" destination="KGm-4Z-0Uu" id="rVK-GZ-3fh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3R1-to-jBu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003" y="106"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="wdc-b1-1Hi">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="HS7-4J-EfL" customClass="ProfileViewController" customModule="Spherum_Dev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xyi-e5-vk8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDH-H9-5af">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TNo-7A-6Uw">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="665"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="217" translatesAutoresizingMaskIntoConstraints="NO" id="Auu-jv-zi0" customClass="ProfileHeaderView" customModule="Spherum_Dev" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="217"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Twv-XY-gPj" customClass="BinarySegmentedControl" customModule="Spherum_Dev" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="217" width="414" height="48"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="xTu-4L-w69"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="firsItem" value="collection_icon"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="secondItem" value="list_icon"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWz-da-KRm">
+                                                <rect key="frame" x="0.0" y="265" width="414" height="400"/>
+                                                <subviews>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="On1-bw-73A">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="P9x-tX-LLw">
+                                                            <size key="itemSize" width="128" height="128"/>
+                                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        </collectionViewFlowLayout>
+                                                        <cells>
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7oO-18-VnY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="75X-KM-mWp">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                </collectionViewCellContentView>
+                                                            </collectionViewCell>
+                                                        </cells>
+                                                    </collectionView>
+                                                    <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NIB-M6-YaX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="400"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </tableView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="Sdc-iK-lqB"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TNo-7A-6Uw" firstAttribute="top" secondItem="JDH-H9-5af" secondAttribute="top" id="1C4-Sw-z1u"/>
+                                    <constraint firstItem="TNo-7A-6Uw" firstAttribute="leading" secondItem="JDH-H9-5af" secondAttribute="leading" id="3J1-AH-adJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="TNo-7A-6Uw" secondAttribute="trailing" id="ejq-6X-jGT"/>
+                                    <constraint firstAttribute="bottom" secondItem="TNo-7A-6Uw" secondAttribute="bottom" id="u7I-U9-chD"/>
+                                </constraints>
+                            </scrollView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAV-RC-Cv2" customClass="BinarySegmentedControl" customModule="Spherum_Dev" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="48"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="I5n-VE-zKA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="firsItem" value="collection_icon"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="secondItem" value="list_icon"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BGj-Tm-70I"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BGj-Tm-70I" firstAttribute="bottom" secondItem="JDH-H9-5af" secondAttribute="bottom" id="4JD-bC-ZEk"/>
+                            <constraint firstItem="TNo-7A-6Uw" firstAttribute="width" secondItem="BGj-Tm-70I" secondAttribute="width" id="5FV-gd-I7k"/>
+                            <constraint firstItem="oAV-RC-Cv2" firstAttribute="top" secondItem="BGj-Tm-70I" secondAttribute="top" id="Gof-16-JE3"/>
+                            <constraint firstItem="JDH-H9-5af" firstAttribute="top" secondItem="BGj-Tm-70I" secondAttribute="top" id="JoD-Uw-C0Y"/>
+                            <constraint firstItem="BGj-Tm-70I" firstAttribute="trailing" secondItem="oAV-RC-Cv2" secondAttribute="trailing" id="K7T-zP-H51"/>
+                            <constraint firstItem="oAV-RC-Cv2" firstAttribute="leading" secondItem="BGj-Tm-70I" secondAttribute="leading" id="nBp-1y-Hhq"/>
+                            <constraint firstItem="BGj-Tm-70I" firstAttribute="trailing" secondItem="JDH-H9-5af" secondAttribute="trailing" id="tWZ-K4-zAB"/>
+                            <constraint firstItem="JDH-H9-5af" firstAttribute="leading" secondItem="BGj-Tm-70I" secondAttribute="leading" id="tnL-Ea-PRr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="X6t-Hm-lVn">
+                        <barButtonItem key="backBarButtonItem" title=" " id="qbn-rk-tey"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contentCollectionView" destination="On1-bw-73A" id="QvX-j1-3Ck"/>
+                        <outlet property="contentHeightConstraint" destination="Sdc-iK-lqB" id="OTJ-Yv-jcj"/>
+                        <outlet property="contentTableView" destination="NIB-M6-YaX" id="mIV-aH-XDl"/>
+                        <outlet property="contentViewTypeSegmentedControl" destination="Twv-XY-gPj" id="JZ8-bI-aUO"/>
+                        <outlet property="headerView" destination="Auu-jv-zi0" id="s5e-mb-RbU"/>
+                        <outlet property="scrollView" destination="JDH-H9-5af" id="3Q9-Mh-b2t"/>
+                        <outlet property="topContentViewTypeSegmentedControl" destination="oAV-RC-Cv2" id="u1J-bB-niz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbk-cV-NE7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273.91304347826087" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="6mP-sX-MjA">
+            <size key="intrinsicContentSize" width="90.5" height="31"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="collection_icon" width="28.5" height="28"/>
+        <image name="list_icon" width="28.5" height="28"/>
+        <namedColor name="Black100Color">
+            <color red="0.035000000149011612" green="0.11800000071525574" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Black30Color">
+            <color red="0.70980392156862748" green="0.73333333333333328" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightBlueColor">
+            <color red="0.9137254901960784" green="0.95294117647058818" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary10Color">
+            <color red="0.9137254901960784" green="0.95294117647058818" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary500Color">
+            <color red="0.0" green="0.45882352941176469" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="UnselectedLightGrayColor">
+            <color red="0.70196078431372544" green="0.72549019607843135" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

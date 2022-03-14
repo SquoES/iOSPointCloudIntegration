@@ -1,0 +1,62 @@
+platform :ios, '13.0'
+
+def rx_pods
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
+  pod 'RxRealm'
+  pod 'RxBiBinding'
+  pod 'RxGesture'
+  pod 'RxSwiftExt'
+  pod 'RxReachability'
+end
+
+def pn_pods
+  pod 'RxMVVM', :git => 'https://github.com/JeremySnor/RxMVVM.git'
+  pod 'RxAlamofireWrapper'
+  pod 'CleanMapper'
+  pod 'CleanUseCase'
+end
+
+def other_pods
+  pod 'SnapKit'
+  pod 'SwiftyJSON'
+  pod 'Kingfisher'
+  pod 'ZIPFoundation', '~> 0.9'
+  pod 'ARCapture', :git => 'https://gitlab.com/seriyvolk83/arcapture.git'
+  pod 'lottie-ios'
+end
+
+def firebase_pods
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Messaging'
+end
+
+def all_pods
+  rx_pods
+  pn_pods
+  firebase_pods
+  other_pods
+end
+
+target 'Spherum Dev' do
+  use_frameworks!
+
+  all_pods
+end
+
+target 'Spherum Prod' do
+  use_frameworks!
+
+  all_pods
+end
+
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+      end
+  end
+end
+

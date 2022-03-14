@@ -1,0 +1,10 @@
+#include "Pods/Target Support Files/Pods-Spherum Prod/Pods-Spherum Prod.debug.xcconfig"
+
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD DEBUG
+
+APP_NAME = Spherum
+APP_ICON_NAME = AppIcon
+
+DEVELOPMENT_TEAM = BS4A8BRGUD
+CODE_SIGN_STYLE = Automatic
+PRODUCT_BUNDLE_IDENTIFIER = com.spherum.ios.app

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Semibold.ttf">
+            <string>Gilroy-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecordTypeSelector" customModule="Spherum_Dev" customModuleProvider="target">
+            <connections>
+                <outlet property="recordTypesCollectionView" destination="1eG-Wr-KQ6" id="EBJ-Lv-bXB"/>
+                <outlet property="selectedRecordTypeNameLabel" destination="TfJ-kb-WIW" id="Sm9-iv-WvQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="245"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eG-Wr-KQ6">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="94"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="94" id="xit-EJ-owu"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SrU-uh-hBQ">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfJ-kb-WIW">
+                    <rect key="frame" x="0.0" y="94" width="400" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="S0k-pw-VlK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gilroy-Semibold" family="Gilroy" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1eG-Wr-KQ6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="D9r-ei-aOD"/>
+                <constraint firstItem="1eG-Wr-KQ6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LKp-40-K3G"/>
+                <constraint firstAttribute="trailing" secondItem="1eG-Wr-KQ6" secondAttribute="trailing" id="Pyj-XV-oB3"/>
+                <constraint firstItem="TfJ-kb-WIW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hn3-70-iE1"/>
+                <constraint firstAttribute="bottom" secondItem="TfJ-kb-WIW" secondAttribute="bottom" priority="999" id="i1Y-qC-OW2"/>
+                <constraint firstItem="TfJ-kb-WIW" firstAttribute="top" secondItem="1eG-Wr-KQ6" secondAttribute="bottom" id="rQh-iE-Dds"/>
+                <constraint firstAttribute="trailing" secondItem="TfJ-kb-WIW" secondAttribute="trailing" id="sYt-T2-jKF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-135" y="95"/>
+        </view>
+    </objects>
+</document>

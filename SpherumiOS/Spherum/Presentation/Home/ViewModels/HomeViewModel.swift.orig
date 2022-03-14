@@ -1,0 +1,32 @@
+import RxSwift
+import RxCocoa
+import RxMVVM
+import RxDataSources
+
+class HomeViewModel: ViewModel {
+    
+    private let feedItemViewModels = BehaviorRelay<[FeedElementItemViewModel]>(value: [])
+    lazy var feedItemSections = feedItemViewModels.map({ [SectionModel(model: "", items: $0)] })
+    
+    override func subscribe() {
+        
+<<<<<<< HEAD
+        invokeSingle(RefreshLiveEvents.default,
+                     input: .init(page: 0))
+        
+        invokeSingle(RefreshFeedElements.default,
+                     input: .init(page: 0))
+=======
+        invokeSingle(RefreshFeedElements.default,
+                     input: .init(page: 0))
+        
+        invokeObservable(GetFeedElements.default) { [weak self] in
+            let viewModels = $0.realmFeedElements.map(FeedElementItemViewModel.init)
+            self?.feedItemViewModels.accept(viewModels)
+        }
+>>>>>>> feature/feed-likes
+        
+        super.subscribe()
+    }
+    
+}

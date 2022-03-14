@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		386F91527E96CBBD2A989D11F4809804 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		45CBB49A8E34FFCCF63FD2EA99B21F85 /* Pods-Spherum Prod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B850D263431FB1494ADFF5B96B60B823 /* Pods-Spherum Prod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48EB137483AC930D69B244A94897AB87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6DE4432A34C88B89351CA5CF5C1D7AD9 /* Pods-Spherum Dev-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A35D13DB3DCF7520B36F91ACCBDE2A /* Pods-Spherum Dev-dummy.m */; };
+		93819EB70CA7165DDE580263AA083D3D /* Pods-Spherum Prod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D32863A377C86D256A1280865CFE0B /* Pods-Spherum Prod-dummy.m */; };
+		A5E3444CE94C578B7B4502A01ABFBD9C /* Pods-Spherum Dev-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B142955F43E38FC3A4C27090DF27032F /* Pods-Spherum Dev-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30D79F5ADD0E862E2520DAE30A23D407 /* Pods-Spherum Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Spherum Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		383575C1545EB1AF1ADA62EB366C2CBB /* Pods-Spherum Prod-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Spherum Prod-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4E55E2AD5C0BB5DA8D6B00B80D1492C1 /* Pods-Spherum Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Spherum Dev.release.xcconfig"; sourceTree = "<group>"; };
+		50D403A20557327C74AF7323736D6669 /* Pods-Spherum Dev */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Spherum Dev"; path = Pods_Spherum_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51A35D13DB3DCF7520B36F91ACCBDE2A /* Pods-Spherum Dev-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Spherum Dev-dummy.m"; sourceTree = "<group>"; };
+		72D18B06B1D85F8FB4244D5B081B3151 /* Pods-Spherum Prod-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Spherum Prod-Info.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		92CE7FECFD746C1FC44DDDD26A2D9066 /* Pods-Spherum Prod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Spherum Prod.debug.xcconfig"; sourceTree = "<group>"; };
+		95ABFAF2A75A426427AA93A5289FF9D5 /* Pods-Spherum Dev-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Spherum Dev-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5144A40ABC8CE5850C0ED93EDB64242 /* Pods-Spherum Dev.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Spherum Dev.modulemap"; sourceTree = "<group>"; };
+		A687574FC2BB113306EB67C97F80EF6B /* Pods-Spherum Prod */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Spherum Prod"; path = Pods_Spherum_Prod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B142955F43E38FC3A4C27090DF27032F /* Pods-Spherum Dev-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Spherum Dev-umbrella.h"; sourceTree = "<group>"; };
+		B5C61EA1DE4B5841D8D4B945A0A7E8E0 /* Pods-Spherum Prod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Spherum Prod.modulemap"; sourceTree = "<group>"; };
+		B850D263431FB1494ADFF5B96B60B823 /* Pods-Spherum Prod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Spherum Prod-umbrella.h"; sourceTree = "<group>"; };
+		BEBE2A6216B0B6066A9F08C17D2A1C60 /* Pods-Spherum Prod-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Spherum Prod-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF2F73F5DDC0A9887F9B6671506D01C6 /* Pods-Spherum Prod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Spherum Prod.release.xcconfig"; sourceTree = "<group>"; };
+		C4383E2895A8FC61704B734203B3819A /* Pods-Spherum Dev-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Spherum Dev-acknowledgements.plist"; sourceTree = "<group>"; };
+		C6BF5C2B7F92E9E3A62B6C5EAC63A1E5 /* Pods-Spherum Dev-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Spherum Dev-Info.plist"; sourceTree = "<group>"; };
+		D9D32863A377C86D256A1280865CFE0B /* Pods-Spherum Prod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Spherum Prod-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69971442207D2207EF2BA2228245F816 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48EB137483AC930D69B244A94897AB87 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDC8096D87FA55A66DD0407310980FCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				386F91527E96CBBD2A989D11F4809804 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1283BD671B4F830EA39628A62033B0C0 /* Pods-Spherum Prod */ = {
+			isa = PBXGroup;
+			children = (
+				B5C61EA1DE4B5841D8D4B945A0A7E8E0 /* Pods-Spherum Prod.modulemap */,
+				383575C1545EB1AF1ADA62EB366C2CBB /* Pods-Spherum Prod-acknowledgements.markdown */,
+				BEBE2A6216B0B6066A9F08C17D2A1C60 /* Pods-Spherum Prod-acknowledgements.plist */,
+				D9D32863A377C86D256A1280865CFE0B /* Pods-Spherum Prod-dummy.m */,
+				72D18B06B1D85F8FB4244D5B081B3151 /* Pods-Spherum Prod-Info.plist */,
+				B850D263431FB1494ADFF5B96B60B823 /* Pods-Spherum Prod-umbrella.h */,
+				92CE7FECFD746C1FC44DDDD26A2D9066 /* Pods-Spherum Prod.debug.xcconfig */,
+				BF2F73F5DDC0A9887F9B6671506D01C6 /* Pods-Spherum Prod.release.xcconfig */,
+			);
+			name = "Pods-Spherum Prod";
+			path = "Target Support Files/Pods-Spherum Prod";
+			sourceTree = "<group>";
+		};
+		2613627AB066254979F39577D1A94132 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				697E50C346AD81E2366600A2D63361DE /* Pods-Spherum Dev */,
+				1283BD671B4F830EA39628A62033B0C0 /* Pods-Spherum Prod */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		697E50C346AD81E2366600A2D63361DE /* Pods-Spherum Dev */ = {
+			isa = PBXGroup;
+			children = (
+				A5144A40ABC8CE5850C0ED93EDB64242 /* Pods-Spherum Dev.modulemap */,
+				95ABFAF2A75A426427AA93A5289FF9D5 /* Pods-Spherum Dev-acknowledgements.markdown */,
+				C4383E2895A8FC61704B734203B3819A /* Pods-Spherum Dev-acknowledgements.plist */,
+				51A35D13DB3DCF7520B36F91ACCBDE2A /* Pods-Spherum Dev-dummy.m */,
+				C6BF5C2B7F92E9E3A62B6C5EAC63A1E5 /* Pods-Spherum Dev-Info.plist */,
+				B142955F43E38FC3A4C27090DF27032F /* Pods-Spherum Dev-umbrella.h */,
+				30D79F5ADD0E862E2520DAE30A23D407 /* Pods-Spherum Dev.debug.xcconfig */,
+				4E55E2AD5C0BB5DA8D6B00B80D1492C1 /* Pods-Spherum Dev.release.xcconfig */,
+			);
+			name = "Pods-Spherum Dev";
+			path = "Target Support Files/Pods-Spherum Dev";
+			sourceTree = "<group>";
+		};
+		AFED493741C54607450BC974842C248B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50D403A20557327C74AF7323736D6669 /* Pods-Spherum Dev */,
+				A687574FC2BB113306EB67C97F80EF6B /* Pods-Spherum Prod */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				AFED493741C54607450BC974842C248B /* Products */,
+				2613627AB066254979F39577D1A94132 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2A7CB6CCFCF588CB58513DA36D089FC4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E3444CE94C578B7B4502A01ABFBD9C /* Pods-Spherum Dev-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7298E9F5B2EDE4FA47050ED2CE7C6606 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45CBB49A8E34FFCCF63FD2EA99B21F85 /* Pods-Spherum Prod-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F31B1D0D2AB7223F801068D5B1538DE /* Pods-Spherum Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D3AE5102B0D9F877E11FAB2C236B146 /* Build configuration list for PBXNativeTarget "Pods-Spherum Dev" */;
+			buildPhases = (
+				2A7CB6CCFCF588CB58513DA36D089FC4 /* Headers */,
+				9A5AEA16FB213344B66EB56A2B43C8A8 /* Sources */,
+				FDC8096D87FA55A66DD0407310980FCA /* Frameworks */,
+				25AECBA1D1B381AE0C38584EB0C8FCE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Spherum Dev";
+			productName = Pods_Spherum_Dev;
+			productReference = 50D403A20557327C74AF7323736D6669 /* Pods-Spherum Dev */;
+			productType = "com.apple.product-type.framework";
+		};
+		3A69F38EFF98A487626B1697E7C20684 /* Pods-Spherum Prod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD2D0E32B84C162E67135E97008431C9 /* Build configuration list for PBXNativeTarget "Pods-Spherum Prod" */;
+			buildPhases = (
+				7298E9F5B2EDE4FA47050ED2CE7C6606 /* Headers */,
+				62579E58F2F6813988948A685D2B2EAF /* Sources */,
+				69971442207D2207EF2BA2228245F816 /* Frameworks */,
+				173130FE0056F89BF19061A2BE7FE670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Spherum Prod";
+			productName = Pods_Spherum_Prod;
+			productReference = A687574FC2BB113306EB67C97F80EF6B /* Pods-Spherum Prod */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = AFED493741C54607450BC974842C248B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F31B1D0D2AB7223F801068D5B1538DE /* Pods-Spherum Dev */,
+				3A69F38EFF98A487626B1697E7C20684 /* Pods-Spherum Prod */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		173130FE0056F89BF19061A2BE7FE670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25AECBA1D1B381AE0C38584EB0C8FCE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62579E58F2F6813988948A685D2B2EAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93819EB70CA7165DDE580263AA083D3D /* Pods-Spherum Prod-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A5AEA16FB213344B66EB56A2B43C8A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE4432A34C88B89351CA5CF5C1D7AD9 /* Pods-Spherum Dev-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2B6DC7FB3A3A1304AA777E55EFB436DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D79F5ADD0E862E2520DAE30A23D407 /* Pods-Spherum Dev.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Spherum Dev/Pods-Spherum Dev-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Spherum Dev/Pods-Spherum Dev.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4DB9FD79D6DCBF8D1C48E9D465B155E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E55E2AD5C0BB5DA8D6B00B80D1492C1 /* Pods-Spherum Dev.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Spherum Dev/Pods-Spherum Dev-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Spherum Dev/Pods-Spherum Dev.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		69EFFA4A318A6B08FF8FB2B9B287AD35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF2F73F5DDC0A9887F9B6671506D01C6 /* Pods-Spherum Prod.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Spherum Prod/Pods-Spherum Prod-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Spherum Prod/Pods-Spherum Prod.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8296C35C331898A4E459A56048B80999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92CE7FECFD746C1FC44DDDD26A2D9066 /* Pods-Spherum Prod.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Spherum Prod/Pods-Spherum Prod-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Spherum Prod/Pods-Spherum Prod.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D3AE5102B0D9F877E11FAB2C236B146 /* Build configuration list for PBXNativeTarget "Pods-Spherum Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B6DC7FB3A3A1304AA777E55EFB436DE /* Debug */,
+				4DB9FD79D6DCBF8D1C48E9D465B155E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD2D0E32B84C162E67135E97008431C9 /* Build configuration list for PBXNativeTarget "Pods-Spherum Prod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8296C35C331898A4E459A56048B80999 /* Debug */,
+				69EFFA4A318A6B08FF8FB2B9B287AD35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

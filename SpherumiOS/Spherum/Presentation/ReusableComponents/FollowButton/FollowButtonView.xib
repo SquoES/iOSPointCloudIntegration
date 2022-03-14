@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Semibold.ttf">
+            <string>Gilroy-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FollowButtonView" customModule="Spherum_Dev" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonBackgroundView" destination="3Nr-PC-csX" id="eg2-h4-yJ2"/>
+                <outlet property="followingView" destination="htL-WP-qpN" id="7iq-yL-v2T"/>
+                <outlet property="notFollowingView" destination="sEb-tE-WiR" id="cAM-xL-GMg"/>
+                <outlet property="switchFollowingButton" destination="iwA-hx-Izb" id="mdZ-aj-QX8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="636"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Nr-PC-csX" userLabel="ButtonBackgroundView">
+                    <rect key="frame" x="0.0" y="0.0" width="450" height="58"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1ic-TM-JR3">
+                            <rect key="frame" x="14" y="8" width="422" height="42"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sEb-tE-WiR" userLabel="NotFollowingView">
+                                    <rect key="frame" x="0.0" y="0.0" width="422" height="21"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Follow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csb-Te-X5J">
+                                            <rect key="frame" x="0.0" y="0.0" width="422" height="21"/>
+                                            <fontDescription key="fontDescription" name="Gilroy-Semibold" family="Gilroy" pointSize="19"/>
+                                            <color key="textColor" name="AccentBlueColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="csb-Te-X5J" firstAttribute="leading" secondItem="sEb-tE-WiR" secondAttribute="leading" id="0I0-Dt-Ujy"/>
+                                        <constraint firstAttribute="height" constant="21" id="AEC-7X-y5f"/>
+                                        <constraint firstItem="csb-Te-X5J" firstAttribute="top" secondItem="sEb-tE-WiR" secondAttribute="top" id="Cex-9V-QiE"/>
+                                        <constraint firstAttribute="trailing" secondItem="csb-Te-X5J" secondAttribute="trailing" id="WXu-gp-fd8"/>
+                                        <constraint firstAttribute="bottom" secondItem="csb-Te-X5J" secondAttribute="bottom" id="ycN-yO-R3G"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htL-WP-qpN" userLabel="FollowingView">
+                                    <rect key="frame" x="0.0" y="21" width="422" height="21"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKs-7n-Fnk">
+                                            <rect key="frame" x="159.5" y="0.0" width="103" height="21"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="5T1-63-lAn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="103" height="21"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Following" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="123-ja-Wjd">
+                                                            <rect key="frame" x="0.0" y="0.0" width="83" height="21"/>
+                                                            <fontDescription key="fontDescription" name="Gilroy-Semibold" family="Gilroy" pointSize="19"/>
+                                                            <color key="textColor" name="AppBlackColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDg-oc-RDs">
+                                                            <rect key="frame" x="87" y="0.0" width="16" height="21"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark-icon" translatesAutoresizingMaskIntoConstraints="NO" id="o9I-jn-XpR">
+                                                                    <rect key="frame" x="0.0" y="2.5" width="16" height="16"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="16" id="SKC-wP-9h3"/>
+                                                                        <constraint firstAttribute="width" constant="16" id="oZT-OZ-1aq"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="o9I-jn-XpR" firstAttribute="centerX" secondItem="zDg-oc-RDs" secondAttribute="centerX" id="dBd-X5-VVg"/>
+                                                                <constraint firstItem="o9I-jn-XpR" firstAttribute="centerY" secondItem="zDg-oc-RDs" secondAttribute="centerY" id="fDz-wX-Jnc"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="103" id="5ME-m3-shT"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="5T1-63-lAn" secondAttribute="trailing" id="Eb2-x4-d7G"/>
+                                                <constraint firstItem="5T1-63-lAn" firstAttribute="top" secondItem="AKs-7n-Fnk" secondAttribute="top" id="Jif-nK-FDm"/>
+                                                <constraint firstItem="5T1-63-lAn" firstAttribute="leading" secondItem="AKs-7n-Fnk" secondAttribute="leading" id="Muf-1D-WxO"/>
+                                                <constraint firstAttribute="bottom" secondItem="5T1-63-lAn" secondAttribute="bottom" id="YfV-dn-ybg"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" name="LightGrayColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="7Ej-rL-8XB"/>
+                                        <constraint firstAttribute="bottom" secondItem="AKs-7n-Fnk" secondAttribute="bottom" id="I9w-VP-bDH"/>
+                                        <constraint firstItem="AKs-7n-Fnk" firstAttribute="centerX" secondItem="htL-WP-qpN" secondAttribute="centerX" id="Xw3-I9-T8B"/>
+                                        <constraint firstItem="AKs-7n-Fnk" firstAttribute="top" secondItem="htL-WP-qpN" secondAttribute="top" id="fSP-8I-r0F"/>
+                                        <constraint firstItem="AKs-7n-Fnk" firstAttribute="centerY" secondItem="htL-WP-qpN" secondAttribute="centerY" id="jNo-dp-bep"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwA-hx-Izb">
+                            <rect key="frame" x="0.0" y="0.0" width="450" height="58"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="LightGrayColor"/>
+                    <constraints>
+                        <constraint firstItem="iwA-hx-Izb" firstAttribute="top" secondItem="3Nr-PC-csX" secondAttribute="top" id="EOW-Bq-zI3"/>
+                        <constraint firstItem="iwA-hx-Izb" firstAttribute="leading" secondItem="3Nr-PC-csX" secondAttribute="leading" id="Yqd-cV-Qud"/>
+                        <constraint firstAttribute="bottom" secondItem="1ic-TM-JR3" secondAttribute="bottom" constant="8" id="hh0-yC-Dai"/>
+                        <constraint firstAttribute="bottom" secondItem="iwA-hx-Izb" secondAttribute="bottom" id="mce-VI-pvl"/>
+                        <constraint firstItem="1ic-TM-JR3" firstAttribute="top" secondItem="3Nr-PC-csX" secondAttribute="top" constant="8" id="muf-en-zdn"/>
+                        <constraint firstItem="1ic-TM-JR3" firstAttribute="leading" secondItem="3Nr-PC-csX" secondAttribute="leading" constant="14" id="wp6-Cy-1cr"/>
+                        <constraint firstAttribute="trailing" secondItem="iwA-hx-Izb" secondAttribute="trailing" id="x20-Nc-EeU"/>
+                        <constraint firstAttribute="trailing" secondItem="1ic-TM-JR3" secondAttribute="trailing" constant="14" id="ypQ-af-mSR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="3Nr-PC-csX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="K1T-jY-X2k"/>
+                <constraint firstAttribute="trailing" secondItem="3Nr-PC-csX" secondAttribute="trailing" id="PzV-aB-5Ca"/>
+                <constraint firstAttribute="bottom" secondItem="3Nr-PC-csX" secondAttribute="bottom" priority="999" id="XP1-66-D3w"/>
+                <constraint firstItem="3Nr-PC-csX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vN8-JP-dk5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="140.57971014492756" y="332.14285714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check-mark-icon" width="16" height="16"/>
+        <namedColor name="AccentBlueColor">
+            <color red="0.0" green="0.45899999141693115" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppBlackColor">
+            <color red="0.035000000149011612" green="0.11800000071525574" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightGrayColor">
+            <color red="0.95300000905990601" green="0.9570000171661377" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

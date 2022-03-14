@@ -1,0 +1,6 @@
+framework module Pods_Spherum_Prod {
+  umbrella header "Pods-Spherum Prod-umbrella.h"
+
+  export *
+  module * { export * }
+}

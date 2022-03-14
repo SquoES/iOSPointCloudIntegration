@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UnityPlayerViewController" customModule="Spherum_Dev" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="X3O-24-JEm" id="r5y-Lp-n9Q"/>
+                <outlet property="loadingIndicator" destination="UeL-Vk-nrU" id="ttR-lN-9KZ"/>
+                <outlet property="progressLabel" destination="Sus-EZ-Sf0" id="HRa-oQ-3mG"/>
+                <outlet property="progressView" destination="S39-RZ-MdX" id="cnQ-gU-Dsv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="S39-RZ-MdX">
+                    <rect key="frame" x="20" y="441.33333333333331" width="388" height="53.333333333333314"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="UeL-Vk-nrU">
+                            <rect key="frame" x="0.0" y="0.0" width="388" height="20"/>
+                            <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 %" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sus-EZ-Sf0">
+                            <rect key="frame" x="0.0" y="34" width="388" height="19.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3O-24-JEm">
+                    <rect key="frame" x="20" y="534.66666666666663" width="388" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="sIO-Wh-3kj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="S39-RZ-MdX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="93S-UI-8pX"/>
+                <constraint firstItem="X3O-24-JEm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Any-bH-nf2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="S39-RZ-MdX" secondAttribute="trailing" constant="20" id="Ver-XQ-Z6W"/>
+                <constraint firstItem="S39-RZ-MdX" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="YmP-6c-tcn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X3O-24-JEm" secondAttribute="trailing" constant="20" id="uXJ-xe-z8n"/>
+                <constraint firstItem="S39-RZ-MdX" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="uuY-ZC-jX9"/>
+                <constraint firstItem="X3O-24-JEm" firstAttribute="top" secondItem="S39-RZ-MdX" secondAttribute="bottom" constant="40" id="xAE-PH-VTX"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="154"/>
+        </view>
+    </objects>
+</document>
